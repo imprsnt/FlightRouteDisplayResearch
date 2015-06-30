@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Routes>
+    <Route name="Original Plan">
+        <Tails>
+            <Tail tailNo="987">
+                <Leg>
+                	<Source airportName="ORD" departureTime="07:00" />
+                	<Destination airportName="OKC" arrivalTime="09:10" />
+                </Leg>
+				<Leg>
+                	<Source airportName="OKC" departureTime="09:40" />
+                	<Destination airportName="IAH" arrivalTime="11:20" />
+                	<Meta id="Cx" isCx="676(IAH - LAX)" penaltyId="" penaltyCost="" />
+                </Leg>
+				<Leg>
+                	<Source airportName="IAH" departureTime="11:50" />
+                	<Destination airportName="OKC" arrivalTime="13:30" />
+                </Leg>
+				<Leg>
+                	<Source airportName="OKC" departureTime="14:00" />
+                	<Destination airportName="ORD" arrivalTime="16:10" />
+                	<Meta id="Mx" isCx="" penaltyId="" penaltyCost="" />
+                </Leg> 
+        	</Tail>
+			
+			
+        	<Tail tailNo="676">
+        	     <Leg>
+                	<Source airportName="IAH" departureTime="12:30" />
+                	<Destination airportName="LAX" arrivalTime="13:40" />
+                </Leg>
+				<Leg>
+                	<Source airportName="LAX" departureTime="14:10" />
+                	<Destination airportName="IAH" arrivalTime="19:20" />
+                </Leg>
+        	</Tail>
+			
+        </Tails>
+    </Route>
+	
+	 <Route name="Option-Hold">
+        <Tails>
+            <Tail tailNo="987">
+                <Leg>
+                	<Source airportName="ORD" departureTime="07:00" />
+                	<Destination airportName="OKC" arrivalTime="10:20" />
+					<Meta id="" isCx="" penaltyId="Delay" penaltyCost="8" />
+					<Meta id="" isCx="" penaltyId="Cx" penaltyCost="5" />
+					<Meta id="" isCx="" penaltyId="UM" penaltyCost="10" />
+					<Meta id="" isCx="" penaltyId="Px" penaltyCost="3" />
+                </Leg>
+				<Leg>
+                	<Source airportName="OKC" departureTime="10:50" />
+                	<Destination airportName="IAH" arrivalTime="12:20" />
+                	<Meta id="Cx" isCx="676(IAH - LAX)" penaltyId="Delay" penaltyCost="8" />
+                </Leg>
+				<Leg>
+                	<Source airportName="IAH" departureTime="12:50" />
+                	<Destination airportName="OKC" arrivalTime="14:20" />
+					<Meta id="" isCx="" penaltyId="Delay" penaltyCost="8" />
+                </Leg>
+				<Leg>
+                	<Source airportName="OKC" departureTime="14:50" />
+                	<Destination airportName="ORD" arrivalTime="16:40" />
+                	<Meta id="Mx" isCx="" penaltyId="Delay" penaltyCost="8" />
+                </Leg> 
+        	</Tail>
+			
+        	<Tail tailNo="676">
+        	     <Leg>
+                	<Source airportName="IAH" departureTime="12:30" />
+                	<Destination airportName="LAX" arrivalTime="13:40" />
+                </Leg>
+				<Leg>
+                	<Source airportName="LAX" departureTime="14:10" />
+                	<Destination airportName="IAH" arrivalTime="19:20" />
+					<Meta id="" isCx="" penaltyId="Px" penaltyCost="3" />
+                </Leg>
+        	</Tail>
+        </Tails>
+    </Route>
+	
+	
+	
+	
+	
+	
+	 <Route name="Option 2 - Divert to DFW">
+        <Tails>
+            <Tail tailNo="987">
+                <Leg>
+                	<Source airportName="ORD" departureTime="07:00" />
+                	<Destination airportName="DFW" arrivalTime="09:50" />
+					<Meta id="" isCx="" penaltyId="M" penaltyCost="10" />
+                </Leg>
+				<Leg>
+                	<Source airportName="DFW" departureTime="10:50" />
+                	<Destination airportName="IAH" arrivalTime="12:30" />
+                	<Meta id="Cx" isCx="676(IAH - LAX)" penaltyId="Delay" penaltyCost="8" />
+					<Meta id="" isCx="" penaltyId="P" penaltyCost="3" />
+                </Leg>
+				<Leg>
+                	<Source airportName="IAH" departureTime="13:00" />
+                	<Destination airportName="OKC" arrivalTime="14:30" />
+					<Meta id="" isCx="" penaltyId="Delay" penaltyCost="8" />
+                </Leg>
+				<Leg>
+                	<Source airportName="OKC" departureTime="15:00" />
+                	<Destination airportName="ORD" arrivalTime="17:00" />
+                	<Meta id="Mx" isCx="" penaltyId="Delay" penaltyCost="8" />
+                </Leg> 
+        	</Tail>
+			
+        	<Tail tailNo="676">
+        	     <Leg>
+                	<Source airportName="IAH" departureTime="12:30" />
+                	<Destination airportName="LAX" arrivalTime="13:40" />
+                </Leg>
+				<Leg>
+                	<Source airportName="LAX" departureTime="14:10" />
+                	<Destination airportName="IAH" arrivalTime="19:20" />
+                </Leg>
+        	</Tail>
+        </Tails>
+        
+    </Route>
+	
+	
+	<Route name="Option 3- Divert to TUL then to OKC">
+        <Tails>
+            <Tail tailNo="987">
+                <Leg>
+                	<Source airportName="ORD" departureTime="07:00" />
+                	<Destination airportName="TUL" arrivalTime="09:00" />
+					<Meta id="" isCx="" penaltyId="M" penaltyCost="10" />
+                </Leg>
+				<Leg>
+                	<Source airportName="TUL" departureTime="10:00" />
+                	<Destination airportName="OKC" arrivalTime="10:30" />
+					<Meta id="" isCx="" penaltyId="Delay" penaltyCost="8" />
+
+                </Leg>
+				<Leg>
+                	<Source airportName="OKC" departureTime="11:00" />
+                	<Destination airportName="IAH" arrivalTime="12:40" />
+					<Meta id="Cx" isCx="676(IAH - LAX)" penaltyId="Delay" penaltyCost="8" />
+                </Leg>
+				<Leg>
+                	<Source airportName="IAH" departureTime="13:10" />
+                	<Destination airportName="OKC" arrivalTime="14:50" />
+					<Meta id="" isCx="" penaltyId="Delay" penaltyCost="8" />
+                </Leg> 
+				<Leg>
+                	<Source airportName="OKC" departureTime="15:20" />
+                	<Destination airportName="ORD" arrivalTime="17:30" />
+					<Meta id="Mx" isCx="" penaltyId="Delay" penaltyCost="8" />
+                </Leg> 
+        	</Tail>
+			
+        	<Tail tailNo="676">
+        	     <Leg>
+                	<Source airportName="IAH" departureTime="12:30" />
+                	<Destination airportName="LAX" arrivalTime="13:40" />
+					<Meta id="" isCx="" penaltyId="Delay" penaltyCost="8" />
+                </Leg>
+				<Leg>
+                	<Source airportName="LAX" departureTime="14:10" />
+                	<Destination airportName="IAH" arrivalTime="19:40" />
+					<Meta id="" isCx="" penaltyId="Delay" penaltyCost="8" />
+                </Leg>
+        	</Tail>
+        </Tails>
+    </Route>
+	
+	
+	
+</Routes>
